@@ -8,12 +8,16 @@ proto_library(
     ],
     visibility = [
         ":__pkg__",
-    ]
+    ],
 )
 
 cc_proto_library(
     name="cpp",
     deps = [
-        ":AxisMessages"
-    ]
+        ":AxisMessages",
+    ],
+    visibility = [
+        "//components/axis:__pkg__",    
+        "//components/object:__pkg__",    
+    ],
 )
