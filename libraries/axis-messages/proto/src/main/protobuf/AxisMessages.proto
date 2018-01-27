@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "libraries/base-messages/proto/src/main/protobuf/BaseMessages.proto";
+
+message AxisMessage {
+    optional int32 value = 1;
+}
+
+extend BaseMessage {
+    optional AxisMessage axis_message = 100;
+}

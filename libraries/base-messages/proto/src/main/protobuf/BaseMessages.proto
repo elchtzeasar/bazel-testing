@@ -1,0 +1,5 @@
+syntax = "proto2";
+
+message BaseMessage {
+    extensions 100 to 199;
+}
