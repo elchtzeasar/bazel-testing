@@ -9,4 +9,7 @@ cc_binary(
         "-Icomponents/axis/main/src/main/include",
         "-Icomponents/object/main/src/main/include",
     ],
+    visibility = [
+        "//packages:__pkg__",
+    ],
 )
